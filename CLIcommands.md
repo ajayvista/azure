@@ -159,6 +159,12 @@ New-AzVM  -ResourceGroupName "RG01" -Name "WVM01" -Location "EastUs" -Image win2
 Get-AzVm -ResourceGroupName "RG01" | Select Name
 ```
 
+### Get the VM details from scaleset
+
+```sh
+Get-AzVmssVM -ResourceGroupName "resourcegroup1" -VMScaleSetName "VMSS07"
+```
+
 ### Resize VM
 
 ```sh
