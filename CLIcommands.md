@@ -7,17 +7,28 @@
 ## Az Commands - Managing Extensions
 
 #### Get CLI modules installed into your shell
-az extension list-available --output table
 
+```sh
+az extension list-available --output table
+```
 #### Create alias of options 
+
+```sh
 az alias create --name gp --command group
+```
 
 #### List possible options at any level
+
+```sh
 az webapp -h // can use -h to get help after that part
 az extension --help
+```
 
 #### Get the details of a subscription
+
+```sh
 az account list
+```
 
 ## Azure Configure
 Reference: https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration?view=azure-cli-latest
