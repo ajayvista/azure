@@ -65,6 +65,12 @@
 	- File http://<account-name>.file.core.windows.net  
 	- Managed Server Message Block (SMB) file shares for cloud and on-premises servers
 	- Ensure port 445 is open: The SMB protocol requires TCP port 445 to be open; connections will fail if port 445 is blocked.
+	- Azure Files supports two storage tiers: 
+		- Premium and 
+			- Premium general purpose (GPv1 and GPv2) storage accounts are for premium page blobs only. 
+		- Standard. 
+			- Standard file shares are created in general purpose (GPv1 or GPv2) storage accounts and premium file shares are created in FileStorage storage accounts. You cannot create Azure file shares from Blob storage accounts or premium general purpose (GPv1 or GPv2) storage accounts. Standard Azure file shares must created in standard general purpose accounts only and premium Azure file shares must be created in FileStorage storage accounts only. 
+﻿ 
 
 
 Types  
@@ -126,8 +132,7 @@ General
 GUI-based tool to navigate Azure storage  
 Connect to storage account via Azure AD, connection string + SAS URI, or storage account name and key
 
-﻿﻿Azure Files supports two storage tiers: premium and standard. Standard file shares are created in general purpose (GPv1 or GPv2) storage accounts and premium file shares are created in FileStorage storage accounts. You cannot create Azure file shares from Blob storage accounts or premium general purpose (GPv1 or GPv2) storage accounts. Standard Azure file shares must created in standard general purpose accounts only and premium Azure file shares must be created in FileStorage storage accounts only. Premium general purpose (GPv1 and GPv2) storage accounts are for premium page blobs only.  
-﻿ 
+
 **If storage account has virtual network associated, it would be only accessible from the vnet irrespective of having key or storage account is public. By default it is accessible from all vnet**
 
 Allowing **Trusted Microsoft Services** to Access the Storage Account The Firewalls And Virtual Networks blade has an option, enabled by default, called Allow Trusted Microsoft Services To Access This Storage Account. This option allows connectivity to the storage account from other Azure services, such as Azure Monitor, Azure Backup, and Azure Event Hubs.
