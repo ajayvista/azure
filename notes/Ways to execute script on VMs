@@ -1,0 +1,15 @@
+Ways to execute script on VMs
+
+1. Through extension
+
+Set-AzVMExtension `
+>>     -ResourceGroupName $resourceGroup `
+>>     -ExtensionName IIS `
+>>     -VMName $vmName `
+>>     -Publisher Microsoft.Compute `
+>>     -ExtensionType CustomScriptExtension `
+>>     -TypeHandlerVersion 1.4 `
+>>     -SettingString '{"commandToExecute":"powershell Add-WindowsFeature Web-Server,Web-Asp-Net45,NET-Framework-Features"}' `
+>>     -Location EastUS
+
+
