@@ -175,6 +175,8 @@ Set-AzDiagnosticSetting -ResourceId logsbapp01 -ServiceBusRuleId serbuazh740 -En
 
 ## Azure Activity Log
 
+Azure Log Analytics provides a centralized analysis engine for all your Azure resources.
+
 General
 Platform activities for write operations only
 Filters can be saved and re-used on dashboard
@@ -190,7 +192,8 @@ Add through More option in Insights section of Azure Monitor or through choosing
 Cross Tenant
 Deliver across tenants by using the pattern of Source account Activity Log -> Source account Event Hub -> Destination Account Logic App -> Destination Account Log Analytics
 Useful for CSP
-Azure Stor
+Azure Storage
+
 
 ## Alerts
 

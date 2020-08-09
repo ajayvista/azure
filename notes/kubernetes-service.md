@@ -41,7 +41,15 @@ Auto Cluster node and pod scaling | Deciding when to scale up or down in large c
 
 Prior to releasing the Azure Kubernetes Service (AKS), Microsoft offered the Azure Container Service (ACS) as a managed solution that provided multiple orchestration systems as a service, including Kubernetes, Docker Swarm, and DC/OS. ACS has been deprecated, and existing ACS customers will need to migrate to AKS.
 
+```sh
+kubectl apply f appl.yaml applies a configuration change to a resource from a file or stdin.
 
+kubectl get nodes gets a list of all nodes.
+
+az aks install-cli download and install the Kubernetes command-line tool.
+
+az aks get-credentials gets access credentials for a managed Kubernetes cluster
+```
 
 ## Docker
 
